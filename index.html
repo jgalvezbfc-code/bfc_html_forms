@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFC NEW ACCOUNT & COD POLICY AGREEMENT</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+        .form-container { max-width: 800px; margin: 0 auto; border: 1px solid #ccc; padding: 30px; }
+        h1, h2, h3 { color: #333; }
+        h1 { text-align: center; margin-bottom: 20px; }
+        .builders-logo { text-align: center; font-size: 1.2em; font-weight: bold; margin-bottom: 20px; }
+        .section { margin-bottom: 30px; padding: 15px; border: 1px solid #eee; border-radius: 5px; }
+        .section-header { background-color: #f4f4f4; padding: 10px; margin: -15px -15px 15px -15px; border-bottom: 1px solid #eee; font-weight: bold; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="date"], textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .checkbox-group label { display: inline-block; font-weight: normal; margin-right: 15px; }
+        .policy-text { border: 1px dashed #ccc; padding: 10px; background-color: #fffaf0; margin-bottom: 15px; }
+        .policy-text p { margin-top: 0; }
+        .flex-row { display: flex; gap: 20px; }
+        .flex-item { flex: 1; }
+        .flex-item-large { flex: 3; }
+        .note { font-size: 0.9em; color: #666; margin-top: -10px; margin-bottom: 10px; }
+        .submit-button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .submit-button:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+<h1>BFC NEW ACCOUNT & COD POLICY AGREEMENT</h1>
+<div class="builders-logo">Builders Fence Company, Inc.</div>
+
+<form 
+    id="bfcForm"
+    action="https://script.google.com/macros/s/AKfycbwzCmtJtb8fYxcY2JfjdnOCCatcuZPibA25vqnvu1yWSZ6DwzjeSh8fTUhEZvvmXWJ_AQ/exec"
+    method="POST"
+    enctype="multipart/form-data"
+>
+
+
+    <!-- SECTION 1 -->
+    <div class="section">
+        <h2 class="section-header">SECTION 1: CUSTOMER INFORMATION</h2>
+
+        <label for="branch">Select Branch:</label>
+        <select id="branch" name="Branch" required>
+            <option value="" disabled>Select your branch</option>
+            <option value="Sun Valley" selected>Sun Valley</option>
+            <option value="Sacramento">Sacramento</option>
+            <option value="Fontana">Fontana</option>
+            <option value="El Cajon">El Cajon</option>
+            <option value="Tacoma">Tacoma</option>
+        </select>
+
+        <label>Business Name:</label>
+        <input type="text" name="Business Name" value="Test Fence Contractors LLC" required>
+
+        <label>Billing Address:</label>
+        <input type="text" name="Billing Address" value="123 Test Street" required>
+
+        <div class="flex-row">
+            <div class="flex-item-large">
+                <label>City:</label>
+                <input type="text" name="City" value="Sun Valley" required>
+            </div>
+            <div class="flex-item">
+                <label>State:</label>
+                <input type="text" name="State" value="CA" required>
+            </div>
+            <div class="flex-item">
+                <label>Zip:</label>
+                <input type="text" name="Zip" value="91352" required>
+            </div>
+        </div>
+
+        <label>Shipping Address (if different):</label>
+        <input type="text" name="Shipping Address (if different)" value="456 Dropoff Rd">
+
+        <div class="flex-row">
+            <div class="flex-item-large">
+                <label>Shipping City:</label>
+                <input type="text" name="Shipping City" value="Los Angeles">
+            </div>
+            <div class="flex-item">
+                <label>Shipping State:</label>
+                <input type="text" name="Shipping State" value="CA">
+            </div>
+            <div class="flex-item">
+                <label>Shipping Zip:</label>
+                <input type="text" name="Shipping Zip" value="90001">
+            </div>
+        </div>
+
+        <div class="flex-row">
+            <div class="flex-item">
+                <label>Phone:</label>
+                <input type="tel" name="Phone" value="555-123-4567" required>
+            </div>
+            <div class="flex-item">
+                <label>Email:</label>
+                <input type="email" name="Email" value="test@example.com" required>
+            </div>
+            <div class="flex-item">
+                <label>Year Business Established:</label>
+                <input type="text" name="Year Business Established" value="2010">
+            </div>
+        </div>
+
+        <label>Business Structure:</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="Business Structure" value="Corporation" checked> Corporation</label>
+            <label><input type="checkbox" name="Business Structure" value="LLC"> LLC</label>
+            <label><input type="checkbox" name="Business Structure" value="Partnership"> Partnership</label>
+            <label><input type="checkbox" name="Business Structure" value="Sole Proprietor"> Sole Proprietor</label>
+        </div>
+
+        <div class="flex-row">
+            <div class="flex-item-large">
+                <label>Contractor's License #:</label>
+                <input type="text" name="Contractor's License #" value="A123456">
+            </div>
+            <div class="flex-item">
+                <label>License State:</label>
+                <input type="text" name="License State" value="CA">
+            </div>
+        </div>
+
+        <label>Resale Certificate #:</label>
+        <input type="text" name="Resale Certificate #" value="R987654">
+
+        <label>Vehicle Make & Model:</label>
+        <input type="text" name="Vehicle Make & Model" value="Ford F-150">
+    </div>
+
+    <hr>
+
+    <!-- SECTION II -->
+    <div class="section">
+        <h2 class="section-header">SECTION II: CONTACTS</h2>
+
+        <div class="flex-row">
+            <div class="flex-item-large">
+                <label>Primary Contact Name:</label>
+                <input type="text" name="Primary Contact Name" value="John Doe" required>
+            </div>
+            <div class="flex-item">
+                <label>Title:</label>
+                <input type="text" name="Title" value="Owner">
+            </div>
+        </div>
+
+        <div class="flex-row">
+            <div class="flex-item">
+                <label>Accounts Payable Contact:</label>
+                <input type="text" name="Accounts Payable Contact" value="Jane Smith">
+            </div>
+            <div class="flex-item">
+                <label>A/P Phone:</label>
+                <input type="tel" name="A/P Phone" value="555-987-6543">
+            </div>
+            <div class="flex-item-large">
+                <label>A/P Email:</label>
+                <input type="email" name="A/P Email" value="ap@example.com">
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- SECTION III -->
+    <div class="section">
+        <h2 class="section-header">SECTION III: PAYMENT METHODS</h2>
+
+        <label>Preferred Payment Method:</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="Preferred Payment Method" value="Company Check" checked> Company Check</label>
+            <label><input type="checkbox" name="Preferred Payment Method" value="Credit Card"> Credit Card</label>
+            <label><input type="checkbox" name="Preferred Payment Method" value="ACH"> ACH</label>
+            <label><input type="checkbox" name="Preferred Payment Method" value="Cash"> Cash</label>
+        </div>
+
+        <label>Will this account use third-party drivers/couriers?</label>
+        <div class="checkbox-group">
+            <label><input type="radio" name="Will this account use third-party drivers/couriers?" value="Yes" checked> Yes</label>
+            <label><input type="radio" name="Will this account use third-party drivers/couriers?" value="No"> No</label>
+        </div>
+
+        <label>If yes, approved names or companies:</label>
+        <textarea name="If yes, list any approved names or companies" rows="3">Test Courier Service, Speedy Deliveries Inc.</textarea>
+    </div>
+
+    <hr>
+
+    <!-- SECTION IV -->
+    <div class="section">
+        <h2 class="section-header">SECTION IV: AGREEMENTS & AUTHORIZATIONS</h2>
+
+        <label>
+            <input type="checkbox" name="Agreement Acknowledgment"
+            value="I certify that all information is true and agree to BFC's COD Policy and Terms of Sale." checked required>
+            I certify that all information is true and agree to BFC's COD Policy and Terms of Sale.
+        </label>
+    </div>
+
+    <hr>
+
+    <!-- SIGNATURE -->
+    <div class="section">
+        <h2 class="section-header">SIGNATURE & ACKNOWLEDGMENT</h2>
+
+        <div class="flex-row">
+            <div class="flex-item">
+                <label>Authorized Signer Name (Print):</label>
+                <input type="text" name="Authorized Signer Name (Print)" value="J. D. Doe" required>
+            </div>
+            <div class="flex-item">
+                <label>Signer Title:</label>
+                <input type="text" name="Signer Title" value="CEO">
+            </div>
+        </div>
+
+        <div class="flex-row">
+            <div class="flex-item">
+                <label>Signature (Typed/Printed):</label>
+                <input type="text" name="Signature (Typed/Printed)" value="J. D. Doe (Typed Signature)" required>
+            </div>
+            <div class="flex-item">
+                <label>Date Signed:</label>
+                <input type="date" name="Date Signed" value="2025-12-03" required>
+            </div>
+        </div>
+
+        <div class="flex-row">
+            <div class="flex-item-large">
+                <label>Driver's License State & #:</label>
+                <input type="text" name="Driver's License State & #" value="CA A0000000">
+            </div>
+            <div class="flex-item">
+                <label>SSN Last 4:</label>
+                <input type="text" name="Last 4 of SSN" maxlength="4" value="1234">
+            </div>
+        </div>
+
+        <label>Upload Driver's License:</label>
+	<input type="file" name="drivers_license_photo" accept="image/*,.pdf" required>
+
+
+
+        <label>Company Name:</label>
+        <input type="text" name="Company Name" value="Test Fence Contractors LLC">
+    </div>
+
+    <button type="submit" class="submit-button">Submit New Account & Policy Agreement</button>
+</form>
+</div>
+
+
+
+
+
+</body>
+</html>
